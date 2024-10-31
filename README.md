@@ -11,6 +11,8 @@ This application is built with the following technologies:
 - **PostgreSQL** as the database
 - **Prisma ORM** for database interactions
 - **TailwindCSS** for styling
+- **Vercel** for deployment
+- **Supabase** as the PostgrSQL provider
 
 ## Project Structure
 
@@ -136,3 +138,7 @@ The **bikes** API routes are located in the **app/api/bikes** directory and allo
 5. **DELETE /api/bikes/[id]** - Delete a specific bike by **id**.
 
 Each API endpoint returns JSON data and uses appropriate HTTP status codes for error handling.
+
+## Deployments
+
+You can visit [here](https://bike-store-iota-eight.vercel.app/) for deployed application.
