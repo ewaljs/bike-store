@@ -10,14 +10,15 @@ interface BikeFormProps {
 
 export default function BikeForm({ initialData, onSubmit }: BikeFormProps) {
   const [formData, setFormData] = useState<Bike>(
-    initialData || {
-      description: "",
-      rating: 0,
-      price: 0,
-      quantity: 0,
-      type: "",
-      photoUrl: "",
-    }
+    initialData ||
+      ({
+        description: "",
+        rating: 0,
+        price: 0,
+        quantity: 0,
+        type: "",
+        photoUrl: "",
+      } as Bike)
   );
 
   const handleChange = (
