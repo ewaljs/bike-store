@@ -76,7 +76,7 @@ types/
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:ewaljs/bike-store.git
 cd bike-store
 ```
 
