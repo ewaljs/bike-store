@@ -7,7 +7,7 @@ export async function GET() {
   try {
     const bikes = await prisma.bike.findMany();
     return NextResponse.json(bikes);
-  } catch (error) {
+  } catch (_error) {
     return NextResponse.json(
       { error: "Failed to fetch bikes" },
       { status: 500 }
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
       data,
     });
     return NextResponse.json(bike, { status: 201 });
-  } catch (error) {
+  } catch (_error) {
     return NextResponse.json(
       { error: "Failed to create bike" },
       { status: 500 }
